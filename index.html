@@ -27,24 +27,27 @@
 html {
   min-height: 100%;
   position: relative;
-}
-
+<style>
 body {
   margin: 0;
   padding: 0;
-  padding-bottom: 350px; /* Laisse de la place pour le footer */
   font-family: Arial, sans-serif;
   background: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Ça pousse le footer en bas */
 }
 
 footer { 
-  position: absolute; /* Le colle en bas */
-  bottom: 0;
-  left: 0;
-  width: 100%;
   background:#111; 
   color:#fff; 
   padding:40px 20px 20px; 
+  margin-top: 50px; /* Espace entre article et footer */
+  width: 100%;
   box-sizing: border-box;
 }
 .footer-container { 
@@ -78,6 +81,7 @@ footer {
   background:#333;
   padding:8px 12px;
   border-radius:5px;
+  display: inline-block;
 }
 .copyright { 
   text-align:center; 
@@ -87,7 +91,16 @@ footer {
   font-size:13px;
   color:#888;
 }
+
+/* Pour mobile */
+@media (max-width: 768px) {
+  .footer-container { flex-direction: column; }
+}
 </style>
+
+<main>
+  <!-- TON CONTENU ICI : TITRE, ARTICLE ISTM-ISIRO, COMPTEUR, FORMULAIRE -->
+</main>
 
 <footer>
   <div class="footer-container">
@@ -111,18 +124,24 @@ footer {
     <div class="footer-col">
       <h3>Quick Link</h3>
       <a href="#">Actualités</a>
-      <a href="#">santé pédiatrique</a>
+      <a href="#">Politique</a>
       <a href="#">Société</a>
-      <a href="#">culture</a>
+      <a href="#">Agriculture</a>
     </div>
 
     <div class="footer-col">
       <h3>Adresse</h3>
       <p>Adresse : Isiro, Province du Haut-Uélé, RDC</p>
-      <p>Email : sylvainyoung.8@gmail.com@gmail.com</p>
-      <p>Téléphone : +243 81 30 91 826</p>
+      <p>Email : okonda0603@gmail.com</p>
+      <p>Téléphone : +243 81 270 61 15</p>
     </div>
 
+  </div>
+  <div class="copyright">
+    © 2026 VotreSite.com | Haut-Uélé - Isiro. Tous droits réservés.
+  </div>
+</footer>
+<body>
   </div>
   <div class="copyright">
     © 2026 VotreSite.com | Haut-Uélé - Isiro. Tous droits réservés.
