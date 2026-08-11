@@ -27,55 +27,31 @@
 html {
   min-height: 100%;
   position: relative;
+  <div class="copyright">
+    © 2026 VotreSite.com | Haut-Uélé - Isiro. Tous droits réservés.
+  </div>
 <style>
-body {
+html, body {
+  height: 100%;
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  min-height: 100vh;
+}
+
+.site-wrapper {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-main {
-  flex: 1; /* Ça pousse le footer en bas */
-}
-
-footer { 
-  background:#111; 
-  color:#fff; 
-  padding:40px 20px 20px; 
-  margin-top: 50px; /* Espace entre article et footer */
-  width: 100%;
-  box-sizing: border-box;
-}
-.footer-container { 
-  display:flex; 
-  flex-wrap:wrap; 
-  gap:30px; 
-  max-width:1100px; 
-  margin:auto; 
-}
+.site-content {flex: 1; /* Ça pousse le footer en bas */}
+.footer-wrapper { background:#111; color:#fff;  padding:40px 20px 20px; width: 100%;box-sizing: border-box;font-family: Arial, sans-serif;}
+.footer-container { display:flex; flex-wrap:wrap; gap:30px; max-width:1100px; margin:auto;}
 .footer-col { flex:1; min-width:220px; }
-.footer-col h3 { 
-  border-bottom:2px solid #e63946; 
-  padding-bottom:8px; 
-  margin-bottom:15px;
-  font-size:18px;
-}
-.footer-col p, .footer-col a { 
-  color:#bbb; 
-  font-size:14px; 
-  line-height:1.6;
-  text-decoration:none; 
-  display:block; 
-  margin:8px 0; 
-}
+.footer-col h3 { border-bottom:2px solid #e63946; padding-bottom:8px; margin-bottom:15px;font-size:18px;color:#fff;}
+.footer-col p, .footer-col a { color:#bbb; font-size:14px; line-height:1.6;text-decoration:none; display:block; margin:8px 0;}
 .footer-col a:hover { color:#fff; }
 .social a { 
-  font-size:22px; 
-  margin-right:12px; 
+  font-size:18px; 
+  margin-right:10px; 
   color:#fff; 
   text-decoration:none;
   background:#333;
@@ -92,61 +68,54 @@ footer {
   color:#888;
 }
 
-/* Pour mobile */
 @media (max-width: 768px) {
   .footer-container { flex-direction: column; }
 }
 </style>
 
-<main>
-  <!-- TON CONTENU ICI : TITRE, ARTICLE ISTM-ISIRO, COMPTEUR, FORMULAIRE -->
-</main>
+<div class="site-wrapper">
+  <div class="site-content">
+    <!-- METS TOUT TON CONTENU ICI : TITRE, ARTICLES, FORMULAIRE, COMPTEUR -->
+  </div>
 
-<footer>
-  <div class="footer-container">
-    
-    <div class="footer-col">
-      <h3>A propos</h3>
-      <p>Informations du Haut-Uélé pour le Haut-Uélé, du Haut-Uélé pour le monde et du monde pour le Haut-Uélé.</p>
-      <div class="social">
-        <a href="https://facebook.com">f</a>
-        <a href="https://x.com">X</a>
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-container">
+        
+        <div class="footer-col">
+          <h3>A propos</h3>
+          <p>Informations du Haut-Uélé pour le Haut-Uélé, du Haut-Uélé pour le monde et du monde pour le Haut-Uélé.</p>
+          <div class="social">
+            <a href="https://facebook.com">f</a>
+            <a href="https://x.com">X</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <a href="index.html">Accueil</a>
+          <a href="#">A propos</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Link</h3>
+          <a href="#">Actualités</a>
+          <a href="#">santé pédiatrique</a>
+          <a href="#">Société</a>
+          <a href="#">culture</a>
+        </div>
+        <div class="footer-col">
+          <h3>Adresse</h3>
+          <p>Adresse : Isiro, Province du Haut-Uélé, RDC</p>
+          <p>Email : sylvainyoung.8@gmail.com@gmail.com</p>
+          <p>Téléphone : +243 81 30 91 826</p>
+        </div>
+      <div class="copyright">
+        © 2026 sylvainyoung8.github.io | Haut-Uélé - Isiro. Tous droits réservés.
       </div>
-    </div>
-
-    <div class="footer-col">
-      <h3>Navigation</h3>
-      <a href="index.html">Accueil</a>
-      <a href="#">A propos</a>
-      <a href="#">Contact</a>
-    </div>
-
-    <div class="footer-col">
-      <h3>Quick Link</h3>
-      <a href="#">Actualités</a>
-      <a href="#">Politique</a>
-      <a href="#">Société</a>
-      <a href="#">Agriculture</a>
-    </div>
-
-    <div class="footer-col">
-      <h3>Adresse</h3>
-      <p>Adresse : Isiro, Province du Haut-Uélé, RDC</p>
-      <p>Email : okonda0603@gmail.com</p>
-      <p>Téléphone : +243 81 270 61 15</p>
-    </div>
-
+    </footer>
   </div>
-  <div class="copyright">
-    © 2026 VotreSite.com | Haut-Uélé - Isiro. Tous droits réservés.
-  </div>
-</footer>
-<body>
-  </div>
-  <div class="copyright">
-    © 2026 VotreSite.com | Haut-Uélé - Isiro. Tous droits réservés.
-  </div>
-          </footer>
 <body>
     <header>
         <h1>Sylvain Young</h1>
