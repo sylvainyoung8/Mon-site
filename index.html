@@ -23,14 +23,29 @@
 <b>Visites:</b><br>
 <img src="https://hitwebcounter.com/counter/counter.php?page=14123456&style=0025&nbdigits=5&type=page&initCount=0"/>
 </div>
-<body>
-    <style>
+<style>
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 350px; /* Laisse de la place pour le footer */
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
 footer { 
+  position: absolute; /* Le colle en bas */
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background:#111; 
   color:#fff; 
   padding:40px 20px 20px; 
-  margin-top:50px;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 .footer-container { 
   display:flex; 
@@ -73,8 +88,10 @@ footer {
   color:#888;
 }
 </style>
+
 <footer>
   <div class="footer-container">
+    
     <div class="footer-col">
       <h3>A propos</h3>
       <p>Informations du Haut-Uélé pour le Haut-Uélé, du Haut-Uélé pour le monde et du monde pour le Haut-Uélé.</p>
@@ -82,30 +99,36 @@ footer {
         <a href="https://facebook.com">f</a>
         <a href="https://x.com">X</a>
       </div>
+    </div>
+
     <div class="footer-col">
       <h3>Navigation</h3>
       <a href="index.html">Accueil</a>
       <a href="#">A propos</a>
       <a href="#">Contact</a>
     </div>
+
     <div class="footer-col">
       <h3>Quick Link</h3>
       <a href="#">Actualités</a>
-      <a href="#">Politique</a>
+      <a href="#">santé pédiatrique</a>
       <a href="#">Société</a>
-      <a href="#">Agriculture</a>
-      <a href="#">Culture</a>
+      <a href="#">culture</a>
     </div>
+
     <div class="footer-col">
       <h3>Adresse</h3>
       <p>Adresse : Isiro, Province du Haut-Uélé, RDC</p>
       <p>Email : sylvainyoung.8@gmail.com@gmail.com</p>
       <p>Téléphone : +243 81 30 91 826</p>
     </div>
+
+  </div>
   <div class="copyright">
     © 2026 VotreSite.com | Haut-Uélé - Isiro. Tous droits réservés.
   </div>
-</footer>
+          </footer>
+<body>
     <header>
         <h1>Sylvain Young</h1>
         <p>Étudiant | Isiro, Haut-Uélé, RDC</p>
